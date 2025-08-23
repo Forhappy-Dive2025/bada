@@ -1,0 +1,24 @@
+# OS / IDE 관련
+.idea/
+*.iml
+.vscode/
+.DS_Store
+
+# 빌드 산출물
+/target/
+/build/
+/out/
+/dist/
+/node_modules/
+
+# 환경설정 파일
+*.properties
+*.yml
+*.yaml
+application-*.properties
+application-*.yml
+application-*.yaml
+
+# 로그/캐시
+*.log
+*.tmp
