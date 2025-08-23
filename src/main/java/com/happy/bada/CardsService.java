@@ -124,7 +124,7 @@ public class CardsService {
 
         var set1 = new SetItem("평균 파도 높이", List.of(nvl(ctx.waveHeight,"-"), "M"));
         var set2 = new SetItem("현재 수온", List.of(nvl(ctx.waterTemp,"-"), "°C"));
-        var set3 = new SetItem("잡히는 물고기", "숭어");
+        var set3 = new SetItem("잡히는 물고기", List.of("숭어"));
         var set4 = new SetItem("바다의 속도", List.of(nvl(ctx.windSpd,"-"), "m/s"));
         var set5 = ctx.nextTide.map(nt -> new SetItem(
             "오늘의 물돌이",
