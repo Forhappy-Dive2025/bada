@@ -12,7 +12,6 @@
 /node_modules/
 
 # 환경설정 파일
-*.properties
 *.yml
 *.yaml
 application-*.properties
