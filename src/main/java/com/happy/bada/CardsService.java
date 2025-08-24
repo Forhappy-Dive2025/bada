@@ -171,7 +171,7 @@ public class CardsService {
         var set1 = new SetItem("바람", List.of(nvl(ctx.windSpd,"-"), nvl(ctx.windDir,"-")));
         var set2 = new SetItem("평균 파도 높이", List.of(nvl(ctx.waveHeight,"-"), "M"));
         var set3 = new SetItem("현재 수온", List.of(nvl(ctx.waterTemp,"-"), "°C"));
-        var set4 = new SetItem("특보", "None");
+        var set4 = new SetItem("특보", List.of("강풍주의"));
         var set5 = ctx.nextTide.map(nt -> new SetItem(
             "간조만조",
             List.of(
@@ -192,7 +192,7 @@ public class CardsService {
         var set1 = new SetItem("바람", List.of(nvl(ctx.windSpd,"-"), nvl(ctx.windDir,"-")));
         var set2 = new SetItem("평균 파도 높이", List.of(nvl(ctx.waveHeight,"-"), "M"));
         String visKm = fetchVisibilityKmFromOpenMeteo(nowOpt).orElse("-");
-        var set3 = new SetItem("가시거리", List.of(visKm, "km"));        var set4 = new SetItem("특보", "None");
+        var set3 = new SetItem("가시거리", List.of(visKm, "km"));        var set4 = new SetItem("특보", List.of("강풍주의"));
         var set5 = ctx.nextTide.map(nt -> new SetItem(
             "간조만조",
             List.of(
@@ -227,7 +227,7 @@ public class CardsService {
         var set1 = new SetItem("현재 수온", List.of(nvl(ctx.waterTemp,"-"), "°C"));
         var set2 = new SetItem("평균 파도 높이", List.of(nvl(ctx.waveHeight,"-"), "M"));
         var set3 = new SetItem("바람", List.of(nvl(ctx.windSpd,"-"), nvl(ctx.windDir,"-")));
-        var set4 = new SetItem("특보", "None");
+        var set4 = new SetItem("특보", List.of("강풍주의"));
         var set5 = new SetItem("기상", List.of(nvl(ctx.skyText,"-"), nvl(ctx.airTemp,"-"))); // 예시 스펙대로 °C 미부착
         var set6 = new SetItem("파도의 속도", List.of(nvl(ctx.windSpd,"-"), "m/s"));
 
